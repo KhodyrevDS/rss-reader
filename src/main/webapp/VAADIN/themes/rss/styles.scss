@@ -1,0 +1,14 @@
+@import "rss.scss";
+@import "addons.scss";
+
+// This file prefixes all rules with the theme name to avoid causing conflicts with other themes.
+// The actual styles should be defined in mytheme.scss
+
+.rss {
+  @include addons;
+  @include rss;
+
+  .v-slot-h1 {
+    border-bottom: 1px solid #ddd;
+  }
+}
